@@ -1,0 +1,15 @@
+.gear-wheel {
+  border: var(--border-for-block);
+  border-radius: var(--border-radius-for-block);
+  margin-left: 8px;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.gear-wheel__image {
+  transition: all 0.5s ease-in;
+}
+.gear-wheel:hover .gear-wheel__image {
+  transform: rotate(90deg);
+}

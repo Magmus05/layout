@@ -1,0 +1,122 @@
+.form {
+  /* max-width: calc(100% - 336px); */
+  box-sizing: border-box;
+  overflow-y: auto;
+  max-height: calc(100vh - 48px);
+}
+.form__header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background-color: white;
+
+}
+.form__header_shadow{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
+}
+
+
+.form__body {
+  position: relative;
+  max-height: calc(100vh - 112px);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__header-block {
+  display: flex;
+  height: 32px;
+  align-items: center;
+}
+
+.form__header-block_left {
+  gap: 16px;
+}
+.form__header-block_right {
+  gap: 4px;
+}
+.form__title-button {
+  margin: 0;
+
+  font-size: 20px;
+  font-weight: 400;
+}
+.form__title {
+  margin: 0 16px 24px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: -0.3px;
+}
+.overflow-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.form__button {
+  height: 32px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 6px 12px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.form__button_outline {
+  background: white;
+  border: 1px #d5d8dd solid;
+  color: #2e3238;
+}
+.form__button_fill {
+  color: white;
+  background: #0078cf;
+  border: none;
+}
+
+.form__blocks {
+  display: grid;
+  margin: 0 16px;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 990px) {
+  .form__blocks {
+    grid-template-columns: 1fr;
+  }
+  .form {
+    width: calc(100vw - 56px);
+  }
+}
+
+.form::-webkit-scrollbar {
+  margin-right: 2px;
+  width: 8px; /* Устанавливаем ширину скроллбара */
+  background-color: transparent; /* Делает сам скроллбар прозрачным */
+}
+
+.form::-webkit-scrollbar-track {
+  margin-right: 2px;
+  background-color: transparent; /* Убираем фон для дорожки */
+}
+
+.form::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2); /* Цвет ползунка */
+  border-radius: 10px; /* Закругляем ползунок */
+  border: 2px solid rgba(0, 0, 0, 0.1); /* Добавляем тонкую рамку для выделения */
+  margin: 10px;
+}
+
+.form::-webkit-scrollbar-button {
+  display: none; /* Скрываем кнопки скролла */
+}

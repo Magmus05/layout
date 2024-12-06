@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+body {
+  height: 100%;
+  --border-for-block: 1px #d5d8dd solid;
+  --border-radius-for-block: 4px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #2e3238;
+  font-weight: 400;
+  line-height: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

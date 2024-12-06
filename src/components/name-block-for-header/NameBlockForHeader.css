@@ -1,0 +1,15 @@
+.name-block-for-header{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.name-block-for-header__foto{
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .name-block-for-header__name{
+        display: none;
+    }
+  } 

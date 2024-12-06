@@ -1,0 +1,54 @@
+.input-for-block-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.input-for-block-text__required-flag {
+  margin-right: 4px;
+  color: #b21f00;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+.input-for-block-text__label {
+  font-weight: 600;
+  line-height: 20px;
+}
+.input-for-block-text__block-input {
+  display: flex;
+  gap: 4px;
+}
+.input-for-block-text__input {
+  all: unset;
+  flex: 1 1 auto;
+  box-sizing: border-box;
+  padding-left: 8px;
+  max-height: 50px;
+  background: #fcfcfd;
+  border-radius: 4px;
+  border: var(--border-for-block);
+
+
+  height: 32px;
+
+
+}
+
+.input-for-block-text__input:focus {
+  background: #fcfcfd;
+}
+.input-for-block-text__button {
+  cursor: pointer;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  border: var(--border-for-block);
+  background: url(./images/search-black.svg) no-repeat center;
+  background-color: white;
+  transition: all 0.3 linear;
+}
+.input-for-block-text__button:hover {
+  opacity: 0.7;
+}
