@@ -13,7 +13,7 @@ export const InputForBlock = ({ title, values, margin }) => {
             ></button>
           )}
           {values.map((item, i) => (
-            <span key={i} className="input-for-block__tag">
+            <span key={i} className="input-for-block__tag ">
               {item}
               {values.length > 1 && (
                 <button

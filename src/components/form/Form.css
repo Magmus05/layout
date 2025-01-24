@@ -1,12 +1,12 @@
 .form {
-  /* max-width: calc(100% - 336px); */
+  flex: 1;
+  width: calc(100% - 336px);
   box-sizing: border-box;
-  overflow-y: auto;
-  max-height: calc(100vh - 48px);
+  position: relative;
 }
 .form__header {
   position: sticky;
-  top: 0;
+  top: 48px;
   z-index: 100;
   width: 100%;
   padding: 16px;
@@ -14,19 +14,12 @@
   justify-content: space-between;
   box-sizing: border-box;
   background-color: white;
-
 }
-.form__header_shadow{
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
+.form__header_shadow {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
 }
-
 
 .form__body {
-  position: relative;
-  max-height: calc(100vh - 112px);
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
 }
 
 .form__header-block {
@@ -86,37 +79,25 @@
 .form__blocks {
   display: grid;
   margin: 0 16px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: calc(50% - 16px) calc(50% - 16px);
   gap: 16px;
 }
 
-@media (max-width: 990px) {
+@media (max-width: 991px) {
   .form__blocks {
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
   }
   .form {
     width: calc(100vw - 56px);
   }
 }
 
-.form::-webkit-scrollbar {
-  margin-right: 2px;
-  width: 8px; /* Устанавливаем ширину скроллбара */
-  background-color: transparent; /* Делает сам скроллбар прозрачным */
-}
-
-.form::-webkit-scrollbar-track {
-  margin-right: 2px;
-  background-color: transparent; /* Убираем фон для дорожки */
-}
-
-.form::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.2); /* Цвет ползунка */
-  border-radius: 10px; /* Закругляем ползунок */
-  border: 2px solid rgba(0, 0, 0, 0.1); /* Добавляем тонкую рамку для выделения */
-  margin: 10px;
-}
-
-.form::-webkit-scrollbar-button {
-  display: none; /* Скрываем кнопки скролла */
+@media (max-width: 767px) {
+  .form__header-block_right {
+    display: none;
+  }
+  .form__header-block_left {
+    flex: 1 1 auto;
+    justify-content: space-between;
+  }
 }

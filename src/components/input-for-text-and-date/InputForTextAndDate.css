@@ -17,6 +17,7 @@
 .input-for-block-text__block-input {
   display: flex;
   gap: 4px;
+  position: "relative";
 }
 .input-for-block-text__input {
   all: unset;
@@ -28,16 +29,38 @@
   border-radius: 4px;
   border: var(--border-for-block);
 
-
   height: 32px;
-
-
 }
 
 .input-for-block-text__input:focus {
   background: #fcfcfd;
 }
-.input-for-block-text__button {
+
+.inpit-date::before {
+  content: "";
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  border: var(--border-for-block);
+  background-color: white;
+  transition: all 0.3 linear;
+
+  background: url(./images/calendar.svg) no-repeat center;
+}
+.input-for-block-text__button-calendar {
+
+  outline: "none";
+  appearance: "none";
+  background: url(./images/calendar.svg) no-repeat center;
+}
+.input-for-block-text__button{
   cursor: pointer;
   box-sizing: border-box;
   display: inline-block;
@@ -45,10 +68,14 @@
   height: 32px;
   border-radius: 4px;
   border: var(--border-for-block);
-  background: url(./images/search-black.svg) no-repeat center;
   background-color: white;
   transition: all 0.3 linear;
 }
+
+.input-for-block-text__button-search {
+  background: url(./images/search-black.svg) no-repeat center;
+}
+
 .input-for-block-text__button:hover {
   opacity: 0.7;
 }

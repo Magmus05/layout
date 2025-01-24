@@ -29,11 +29,9 @@
   right: 8px;
   top: 7px;
   cursor: pointer;
- 
 }
 
 .input-for-block__tag {
-  display: flex;
   align-items: center;
   background: #e5f4ff;
   border: 1px #99d5ff solid;
@@ -43,6 +41,10 @@
   margin: 0;
   line-height: 20px;
   letter-spacing: 0.35px;
+  max-width: 100%; 
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
 }
 
 .input-for-block__remove-tag {
@@ -53,6 +55,7 @@
   background: url(./images/delete.svg) no-repeat center;
   border: none;
   cursor: pointer;
+  transform: translateY(2px);
 }
 
 .input-for-block__button {

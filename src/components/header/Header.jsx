@@ -8,6 +8,8 @@ export const Header = () => {
   return (
     <header className="header">
       <img src={logo} alt="" className="header__logo" />
+      <div className="header__menu"></div>
+      
       <div className="header__right-block">
         <InputSearch
           buttonSearchClass="input-search__button_search"

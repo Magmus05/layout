@@ -36,6 +36,8 @@
   color: #abb1ba;
 }
 
-/* @media (max-width: 400px) {
-    width: 300px;
-  } */
+@media (max-width: 767px) {
+  .input-search {
+    display: none;
+  }
+}
