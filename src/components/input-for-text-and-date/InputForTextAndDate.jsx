@@ -6,12 +6,12 @@ export const InputForTextAndDate = ({
   buttonSearch,
   margin,
   buttonCalendar,
+  defaultValue,
 }) => {
-  const [selectedDate, setSelectedDate] = React.useState("");
+  const [selectedDate, setSelectedDate] = React.useState(
+    defaultValue ? defaultValue : ""
+  );
 
-  const handleDateChange = (e) => {
-    setSelectedDate(e.target.value);
-  };
   return (
     <div className="input-for-block-text" style={{ margin: margin }}>
       <label className="input-for-block-text__label">
@@ -26,33 +26,14 @@ export const InputForTextAndDate = ({
           <input
             type="text"
             value={selectedDate}
-            readOnly
+            onChange={(e) => setSelectedDate(e.target.value)}
             className="input-for-block-text__input"
           />
 
-          {/* <button
+          <button
             type="button"
-            onClick={openDataPicker}
             className="input-for-block-text__button-calendar input-for-block-text__button "
-          ></button> */}
-          <input
-            type="date"
-            value={selectedDate}
-            onChange={handleDateChange}
-            className="inpit-date"
-            style={{
-              position: "relative",
-              opacity: "0",
-              background: "url(./images/calendar.svg) no-repeat center",
-              cursor: "pointer",
-              width: "25px",
-              height: "32px",
-              fontSize: "20px",
-              outline: "none",
-              color: "transparent" /* Убирает текст */,
-
-            }}
-          />
+          ></button>
         </div>
       ) : (
         <div className="input-for-block-text__block-input">

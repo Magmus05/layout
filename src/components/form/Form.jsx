@@ -82,6 +82,16 @@ export const Form = () => {
             margin=" 16px 0"
             buttonCalendar={true}
           />
+
+          <InputForTextAndDate
+            title="Когда создано"
+            margin=" 16px 0"
+            defaultValue="22.10.2024"
+            buttonCalendar={true}
+          />
+
+          <InputForBlock title="Кем открыто" values={["Андрей Пивоваров"]} />
+          <InputForBlock title="Кем создано" values={["Андрей Пивоваров"]} />
         </div>
       </div>
     </form>

@@ -20,6 +20,7 @@
 }
 
 .form__body {
+  padding-bottom: 16px;
 }
 
 .form__header-block {
@@ -79,7 +80,7 @@
 .form__blocks {
   display: grid;
   margin: 0 16px;
-  grid-template-columns: calc(50% - 16px) calc(50% - 16px);
+  grid-template-columns: calc(50% - 8px) calc(50% - 8px);
   gap: 16px;
 }
 
