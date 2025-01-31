@@ -8,9 +8,7 @@ export const InputForTextAndDate = ({
   buttonCalendar,
   defaultValue,
 }) => {
-  const [selectedDate, setSelectedDate] = React.useState(
-    defaultValue ? defaultValue : ""
-  );
+  const [value, setValue] = React.useState(defaultValue ? defaultValue : "");
 
   return (
     <div className="input-for-block-text" style={{ margin: margin }}>
@@ -25,8 +23,8 @@ export const InputForTextAndDate = ({
         <div className="input-for-block-text__block-input">
           <input
             type="text"
-            value={selectedDate}
-            onChange={(e) => setSelectedDate(e.target.value)}
+            value={value}
+            onChange={(e) => setValue(e.target.value)}
             className="input-for-block-text__input"
           />
 
@@ -37,7 +35,12 @@ export const InputForTextAndDate = ({
         </div>
       ) : (
         <div className="input-for-block-text__block-input">
-          <input type="text" className="input-for-block-text__input" />
+          <input
+            value={value}
+            onChange={(e) => setValue(e.target.value)}
+            type="text"
+            className="input-for-block-text__input"
+          />
 
           {buttonSearch && (
             <button
