@@ -23,7 +23,7 @@
 .input-for-block__tags-clear {
   width: 16px;
   height: 16px;
-  background: url(./images/clear.svg) no-repeat center;
+  background: url(/layout/images/clear.svg) no-repeat center;
   border: none;
   position: absolute;
   right: 8px;
@@ -52,7 +52,7 @@
   box-sizing: border-box;
   width: 16px;
   height: 16px;
-  background: url(./images/delete.svg) no-repeat center;
+  background: url(/layout/images/delete.svg) no-repeat center;
   border: none;
   cursor: pointer;
   transform: translateY(2px);
@@ -69,10 +69,10 @@
 }
 
 .input-for-block__button_plus {
-  background: url(./images/plus.svg) no-repeat center;
+  background: url(/layout/images/plus.svg) no-repeat center;
 }
 .input-for-block__button_search {
-  background: url(./images/search-black.svg) no-repeat center;
+  background: url(/layout/images/search-black.svg) no-repeat center;
 }
 .input-for-block__button:hover {
   opacity: 0.7;

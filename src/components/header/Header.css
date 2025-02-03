@@ -28,7 +28,7 @@
     height: 32px;
     width: 32px;
     cursor: pointer;
-    background: url(./images/sidebar.svg) no-repeat center;
+    background: url(/layout/images/sidebar.svg) no-repeat center;
   }
 
 }

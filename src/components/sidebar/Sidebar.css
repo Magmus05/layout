@@ -26,10 +26,10 @@
   opacity: 0.7;
 }
 .sidebar__item_bar {
-  background: url(./images/sidebar.svg) no-repeat center;
+  background: url(/layout/images/sidebar.svg) no-repeat center;
 }
 .sidebar__item_star {
-  background: url(./images/star.svg) no-repeat center;
+  background: url(/layout/images/star.svg) no-repeat center;
 }
 .sidebar__pin {
   box-sizing: border-box;
@@ -38,7 +38,7 @@
   border-radius: 4px;
   border: 1px #d5d8dd solid;
   cursor: pointer;
-  background: url(./images/no-pin.svg) no-repeat center;
+  background: url(/layout/images/no-pin.svg) no-repeat center;
 }
 .sidebar__pin:hover {
   opacity: 0.7;

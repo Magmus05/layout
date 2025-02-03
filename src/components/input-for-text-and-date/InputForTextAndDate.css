@@ -52,13 +52,13 @@
   background-color: white;
   transition: all 0.3 linear;
 
-  background: url(./images/calendar.svg) no-repeat center;
+  background: url(/layout/images/calendar.svg) no-repeat center;
 }
 .input-for-block-text__button-calendar {
 
   outline: "none";
   appearance: "none";
-  background: url(./images/calendar.svg) no-repeat center;
+  background: url(/layout/images/calendar.svg) no-repeat center;
 }
 .input-for-block-text__button{
   cursor: pointer;
@@ -73,7 +73,7 @@
 }
 
 .input-for-block-text__button-search {
-  background: url(./images/search-black.svg) no-repeat center;
+  background: url(/layout/images/search-black.svg) no-repeat center;
 }
 
 .input-for-block-text__button:hover {

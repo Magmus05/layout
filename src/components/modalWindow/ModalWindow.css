@@ -72,7 +72,7 @@
     border: 1px #d5d8dd solid;
     width: 32px;
     height: 32px;
-    background: url(./images/close-x.svg) no-repeat center;
+    background: url(/layout/images/close-x.svg) no-repeat center;
     cursor: pointer;
   }
   .modal__close-button:hover{

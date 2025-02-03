@@ -17,11 +17,11 @@
 }
 
 .input-search__button_search {
-  background: url(./images/search.svg) no-repeat center;
+  background: url(/layout/images/search.svg) no-repeat center;
   background-size: contain;
 }
 .input-search__button_filter {
-  background: url(./images/filter.svg) no-repeat center;
+  background: url(/layout/images/filter.svg) no-repeat center;
   background-size: contain;
 }
 
