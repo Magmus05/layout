@@ -25,6 +25,8 @@ export const ModalWindow = ({ isOpen }) => {
       <div className="overlay" onClick={() => closeModal()}>
         <div className="modal">
           <form className="modal__form">
+
+
             <div className="modal__form-header">
               <div className="form__header-block form__header-block_left ">
                 <h3 className="form__title-button">Подзадача</h3>
@@ -44,7 +46,13 @@ export const ModalWindow = ({ isOpen }) => {
                   Отменить
                 </button>
               </div>
+
+                <div className="modal__close-button"></div>
             </div>
+
+
+
+
             <div className="modal__form-body">
               <h2 className="modal__form-title overflow-text ">Новая запись</h2>
               <InputForTextAndDate
@@ -94,6 +102,21 @@ export const ModalWindow = ({ isOpen }) => {
                 title="Кем создано"
                 values={["Андрей Пивоваров"]}
               />
+              <div className="modal__form-buttons">
+                <button
+                  type="submit"
+                  className="form__button form__button_fill"
+                >
+                  Сохранить
+                </button>
+                <button
+                  type="button"
+                  className="form__button form__button_outline"
+                  onClick={() => closeModal()}
+                >
+                  Отменить
+                </button>
+              </div>
             </div>
           </form>
         </div>
